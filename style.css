@@ -1,0 +1,804 @@
+/* =========================================================
+CINEMATIC BIRTHDAY WEBSITE
+PART 2A - CORE STYLE.CSS
+========================================================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#090b12;
+color:#ffffff;
+overflow-x:hidden;
+position:relative;
+}
+
+/* ===============================
+STARS BACKGROUND
+=============================== */
+
+#stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-2;
+background:
+radial-gradient(circle at 20% 30%,rgba(255,255,255,.9) 1px,transparent 2px),
+radial-gradient(circle at 70% 20%,rgba(255,255,255,.7) 1px,transparent 2px),
+radial-gradient(circle at 40% 80%,rgba(255,255,255,.8) 1px,transparent 2px),
+radial-gradient(circle at 90% 60%,rgba(255,255,255,.8) 1px,transparent 2px),
+radial-gradient(circle at 15% 90%,rgba(255,255,255,.7) 1px,transparent 2px),
+#090b12;
+animation:twinkle 6s infinite alternate;
+}
+
+@keyframes twinkle{
+from{
+opacity:.7;
+}
+to{
+opacity:1;
+}
+}
+
+/* ===============================
+FLOATING HEARTS CONTAINER
+=============================== */
+
+#hearts-container{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+pointer-events:none;
+z-index:-1;
+}
+
+/* ===============================
+MUSIC BUTTON
+=============================== */
+
+.music-btn{
+position:fixed;
+top:20px;
+right:20px;
+z-index:999;
+border:none;
+padding:14px 24px;
+border-radius:50px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+color:white;
+cursor:pointer;
+transition:.4s;
+box-shadow:0 0 25px rgba(255,255,255,.15);
+}
+
+.music-btn:hover{
+transform:translateY(-4px);
+background:rgba(255,255,255,.2);
+}
+
+/* ===============================
+HERO SECTION
+=============================== */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+position:relative;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+width:700px;
+height:700px;
+background:radial-gradient(circle,
+rgba(255,0,102,.35),
+transparent 70%);
+filter:blur(80px);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:5rem;
+font-weight:800;
+margin-bottom:25px;
+background:linear-gradient(
+90deg,
+#ff5ea9,
+#ffffff,
+#ff5ea9);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+line-height:2;
+font-size:1.3rem;
+opacity:.9;
+}
+
+.start-btn{
+display:inline-block;
+margin-top:40px;
+padding:18px 40px;
+text-decoration:none;
+border-radius:60px;
+color:white;
+font-weight:600;
+background:linear-gradient(
+135deg,
+#ff4d88,
+#ff6ec7);
+transition:.4s;
+}
+
+.start-btn:hover{
+transform:scale(1.05);
+}
+
+/* ===============================
+NAVIGATION
+=============================== */
+
+.story-nav{
+padding:120px 8%;
+}
+
+.story-nav h2{
+text-align:center;
+margin-bottom:60px;
+font-size:3rem;
+}
+
+.nav-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.nav-card{
+text-decoration:none;
+color:white;
+padding:28px;
+border-radius:25px;
+text-align:center;
+transition:.4s;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+}
+
+.nav-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 50px rgba(255,0,100,.25);
+}
+
+/* ===============================
+SECTION
+=============================== */
+
+.section{
+padding:120px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:60px;
+font-size:3rem;
+}
+
+/* ===============================
+GLASSMORPHISM BOX
+=============================== */
+
+.glass .content-box,
+.content-box{
+max-width:1000px;
+margin:auto;
+padding:50px;
+border-radius:30px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 25px 50px rgba(0,0,0,.25);
+}
+
+.content-box p{
+line-height:2.2;
+font-size:1.1rem;
+text-align:center;
+}
+
+/* ===============================
+GALLERY
+=============================== */
+
+.gallery{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.photo-card{
+overflow:hidden;
+border-radius:25px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+transition:.5s;
+}
+
+.photo-card:hover{
+transform:translateY(-10px);
+}
+
+.photo-card img{
+width:100%;
+height:350px;
+object-fit:cover;
+transition:.7s;
+}
+
+.photo-card:hover img{
+transform:scale(1.12);
+}
+
+.photo-card span{
+display:block;
+padding:20px;
+text-align:center;
+}
+
+/* ===============================
+REASON BUTTONS
+=============================== */
+
+.reason-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.reason-btn{
+padding:20px;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:20px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+transition:.4s;
+}
+
+.reason-btn:hover{
+background:rgba(255,105,180,.25);
+transform:translateY(-5px);
+}
+
+#reasonOutput{
+margin-top:40px;
+text-align:center;
+font-size:1.2rem;
+min-height:50px;
+}
+
+/* ===============================
+SPECIAL BUTTONS
+=============================== */
+
+.special-btn{
+border:none;
+cursor:pointer;
+padding:18px 35px;
+border-radius:60px;
+color:white;
+font-weight:600;
+background:linear-gradient(
+135deg,
+#ff4d88,
+#ff6ec7);
+transition:.4s;
+}
+
+.special-btn:hover{
+transform:scale(1.05);
+}
+
+/* ===============================
+HIDDEN BOX
+=============================== */
+
+.hidden-box{
+display:none;
+margin-top:30px;
+padding:35px;
+border-radius:25px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+line-height:2;
+text-align:center;
+}
+
+/* ===============================
+LETTER OUTPUTS
+=============================== */
+
+#letterOutput,
+#chooseOutput,
+#wheelResult{
+margin-top:35px;
+text-align:center;
+font-size:1.2rem;
+min-height:60px;
+}
+
+/* ===============================
+DREAM GRID
+=============================== */
+
+.dream-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.dream-grid div{
+padding:30px;
+text-align:center;
+border-radius:25px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+transition:.4s;
+}
+
+.dream-grid div:hover{
+transform:translateY(-8px);
+}
+
+/* ===============================
+CAKE BOX
+=============================== */
+
+.cake-box{
+text-align:center;
+}
+
+.cake-box img{
+max-width:350px;
+width:100%;
+margin-bottom:30px;
+}
+
+/* ===============================
+FOOTER
+=============================== */
+
+footer{
+text-align:center;
+padding:60px 20px;
+background:rgba(255,255,255,.05);
+border-top:1px solid rgba(255,255,255,.1);
+}
+
+footer p{
+font-size:1.1rem;
+opacity:.9;
+}
+
+/* ===============================
+SCROLL REVEAL
+=============================== */
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* ===============================
+RESPONSIVE
+=============================== */
+
+@media(max-width:768px){
+
+```
+.hero h1{
+    font-size:3rem;
+}
+
+.section h2,
+.story-nav h2{
+    font-size:2.2rem;
+}
+
+.content-box{
+    padding:30px;
+}
+
+.music-btn{
+    top:12px;
+    right:12px;
+    padding:10px 16px;
+    font-size:.85rem;
+}
+
+.nav-grid{
+    grid-template-columns:1fr;
+}
+```
+
+}
+
+@media(max-width:480px){
+
+```
+.hero h1{
+    font-size:2.3rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.start-btn{
+    padding:15px 28px;
+}
+```
+
+}
+/* =========================================================
+   PART 2B - ADVANCED CINEMATIC SECTIONS
+========================================================= */
+
+/* ===============================
+   TIMELINE
+=============================== */
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+    position:relative;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:50%;
+    top:0;
+    width:3px;
+    height:100%;
+    background:linear-gradient(#ff4d88,#ff6ec7);
+    transform:translateX(-50%);
+}
+
+.timeline-item{
+    width:50%;
+    padding:30px;
+    position:relative;
+}
+
+.timeline-item:nth-child(odd){
+    left:0;
+    text-align:right;
+}
+
+.timeline-item:nth-child(even){
+    left:50%;
+}
+
+.timeline-item h3{
+    color:#ff6ec7;
+    margin-bottom:10px;
+}
+
+.timeline-item p{
+    opacity:.9;
+}
+
+/* ===============================
+   RELATIONSHIP WHEEL
+=============================== */
+
+.wheel-wrapper{
+    text-align:center;
+}
+
+#wheelCircle{
+    width:250px;
+    height:250px;
+    margin:30px auto;
+    border-radius:50%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
+    transition:transform 3s ease;
+}
+
+/* ===============================
+   LETTER GRID
+=============================== */
+
+.letter-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.letter-btn{
+    padding:18px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:rgba(255,255,255,.08);
+    color:white;
+    backdrop-filter:blur(10px);
+    transition:.4s;
+}
+
+.letter-btn:hover{
+    transform:translateY(-6px);
+    background:rgba(255,105,180,.25);
+}
+
+/* ===============================
+   STAR MAP
+=============================== */
+
+.star-section{
+    position:relative;
+    overflow:hidden;
+}
+
+.star-section::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(white 1px, transparent 1px);
+    background-size:50px 50px;
+    opacity:.15;
+    animation:moveStars 40s linear infinite;
+}
+
+@keyframes moveStars{
+    from{transform:translateY(0);}
+    to{transform:translateY(-200px);}
+}
+
+/* ===============================
+   WHY I CHOOSE YOU
+=============================== */
+
+.choose-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.choose-btn{
+    padding:20px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:rgba(255,255,255,.08);
+    color:white;
+    transition:.4s;
+}
+
+.choose-btn:hover{
+    transform:scale(1.05);
+    background:rgba(255,0,100,.2);
+}
+
+/* ===============================
+   ROADMAP
+=============================== */
+
+.roadmap{
+    text-align:center;
+    font-size:1.2rem;
+    line-height:2.5;
+}
+
+/* ===============================
+   FINAL SURPRISE SECTION
+=============================== */
+
+.final-section{
+    text-align:center;
+    padding:140px 20px;
+}
+
+#finalScreen{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    overflow:hidden;
+}
+
+.final-content{
+    text-align:center;
+    color:white;
+    max-width:800px;
+    padding:20px;
+}
+
+#typingMessage{
+    font-size:1.5rem;
+    line-height:2;
+    min-height:200px;
+}
+
+/* ===============================
+   LOVE EXPLOSION
+=============================== */
+
+#loveExplosion{
+    font-size:3rem;
+    margin-top:30px;
+    opacity:0;
+    transform:scale(0);
+    transition:1s;
+    color:#ff4d88;
+}
+
+/* ===============================
+   BUTTONS GLOW EFFECT
+=============================== */
+
+.special-btn,
+.start-btn,
+.love-btn{
+    box-shadow:0 0 25px rgba(255,105,180,.3);
+}
+
+/* ===============================
+   CONFETTI (BASIC)
+=============================== */
+
+.confetti{
+    position:fixed;
+    width:10px;
+    height:10px;
+    background:#ff4d88;
+    animation:fall 3s linear forwards;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-100vh) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(100vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* ===============================
+   FLOATING HEART ANIMATION
+=============================== */
+
+.heart{
+    position:fixed;
+    color:#ff4d88;
+    font-size:20px;
+    animation:floatUp 6s linear forwards;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-800px);
+        opacity:0;
+    }
+}
+
+/* ===============================
+   PARALLAX EFFECT BASE
+=============================== */
+
+.section{
+    position:relative;
+    z-index:2;
+}
+
+/* ===============================
+   GLASS EFFECT ENHANCEMENT
+=============================== */
+
+.glass{
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(20px);
+    border-top:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* ===============================
+   MOBILE RESPONSIVE (ADVANCED)
+=============================== */
+
+@media(max-width:768px){
+
+    .timeline-item{
+        width:100%;
+        text-align:left;
+        left:0 !important;
+        padding-left:40px;
+    }
+
+    .timeline::before{
+        left:10px;
+    }
+
+    #typingMessage{
+        font-size:1.1rem;
+    }
+
+    #loveExplosion{
+        font-size:2rem;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .choose-grid,
+    .letter-grid,
+    .nav-grid{
+        grid-template-columns:1fr;
+    }
+
+    .roadmap{
+        font-size:1rem;
+    }
+
+}
