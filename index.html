@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Charan ❤️</title>
+
+```
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+```
+
+</head>
+<body>
+
+```
+<!-- Floating Background Effects -->
+<div id="stars"></div>
+<div id="hearts-container"></div>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="music/birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Music Button -->
+<button id="musicBtn" class="music-btn">
+    🎵 Play Music
+</button>
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>❤️ Happy Birthday Charan ❤️</h1>
+
+        <p id="typewriter"></p>
+
+        <a href="#story-nav" class="start-btn">
+            Begin Our Story ❤️
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Navigation -->
+<section id="story-nav" class="story-nav">
+
+    <h2>Explore Our Journey</h2>
+
+    <div class="nav-grid">
+
+        <a href="#beginning" class="nav-card">💫 The Beginning</a>
+
+        <a href="#love-started" class="nav-card">💕 When Love Started</a>
+
+        <a href="#memories" class="nav-card">📸 Our Memories</a>
+
+        <a href="#things-love" class="nav-card">❤️ Things I Love About You</a>
+
+        <a href="#midnight" class="nav-card">🌙 Secret Midnight Message</a>
+
+        <a href="#timeline" class="nav-card">🎞️ Memory Timeline</a>
+
+        <a href="#wheel" class="nav-card">🎡 Relationship Wheel</a>
+
+        <a href="#letters" class="nav-card">📬 Open When Letters</a>
+
+        <a href="#starmap" class="nav-card">🌌 Star Map</a>
+
+        <a href="#choose" class="nav-card">💕 Why I Choose You</a>
+
+        <a href="#dreams" class="nav-card">🌎 Future Dreams</a>
+
+        <a href="#future" class="nav-card">💍 What I Want With You</a>
+
+        <a href="#cake" class="nav-card">🎂 Birthday Cake</a>
+
+        <a href="#letter" class="nav-card">💌 Letter From My Heart</a>
+
+        <a href="#birthday" class="nav-card">🎂 Birthday Wishes</a>
+
+        <a href="#roadmap" class="nav-card">💍 Our Future Together</a>
+
+        <a href="#surprise" class="nav-card">🎁 Final Surprise</a>
+
+    </div>
+
+</section>
+
+<!-- Beginning -->
+<section id="beginning" class="section glass">
+
+    <h2>💫 The Beginning</h2>
+
+    <div class="content-box">
+
+        <p>
+            Every beautiful story starts somewhere.
+
+            I still remember the day our paths crossed.
+            At that moment I didn't know you would become
+            one of the most important people in my life.
+
+            But life had its own plans...
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Love Started -->
+<section id="love-started" class="section glass">
+
+    <h2>💕 When Love Started</h2>
+
+    <div class="content-box">
+
+        <p>
+            There wasn't a single moment.
+
+            It happened slowly...
+
+            Through conversations.
+            Through caring.
+            Through missing you when you weren't around.
+
+            One day I realized
+            you had already become my favorite person.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Memories -->
+<section id="memories" class="section">
+
+    <h2>📸 Our Favorite Memories</h2>
+
+    <div class="gallery">
+
+        <div class="photo-card">
+            <img src="images/photo1.jpg" alt="">
+            <span>Our First Memory ❤️</span>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/photo2.jpg" alt="">
+            <span>Beautiful Day ❤️</span>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/photo3.jpg" alt="">
+            <span>Forever Favorite ❤️</span>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/photo4.jpg" alt="">
+            <span>Special Moment ❤️</span>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/photo5.jpg" alt="">
+            <span>Just Us ❤️</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Things I Love -->
+<section id="things-love" class="section">
+
+    <h2>❤️ Things I Love About You</h2>
+
+    <div class="reason-grid">
+
+        <button class="reason-btn" data-message="Your smile brightens my world.">😊 Your Smile</button>
+
+        <button class="reason-btn" data-message="You always stand beside me.">🌟 Your Support</button>
+
+        <button class="reason-btn" data-message="You care deeply for everyone you love.">❤️ Your Care</button>
+
+        <button class="reason-btn" data-message="You make ordinary moments special.">✨ Your Presence</button>
+
+        <button class="reason-btn" data-message="You understand me like nobody else.">🤗 Your Understanding</button>
+
+        <button class="reason-btn" data-message="You make me feel safe.">💖 Your Love</button>
+
+    </div>
+
+    <div id="reasonOutput"></div>
+
+</section>
+
+<!-- Secret Message -->
+<section id="midnight" class="section">
+
+    <h2>🌙 Secret Midnight Message</h2>
+
+    <div class="content-box">
+
+        <button id="secretBtn" class="special-btn">
+            🔒 Open Secret Message
+        </button>
+
+        <div id="secretMessage" class="hidden-box">
+
+            If I had one wish,
+
+            it would be to relive every beautiful moment
+            with you again and again ❤️
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Timeline -->
+<section id="timeline" class="section">
+
+    <h2>🎞️ Memory Timeline</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>2024</h3>
+            <p>First Meeting ❤️</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>2025</h3>
+            <p>Closer Than Ever ❤️</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>2026</h3>
+            <p>The Most Beautiful Chapter ❤️</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Wheel -->
+<section id="wheel" class="section">
+
+    <h2>🎡 Relationship Wheel</h2>
+
+    <div class="wheel-wrapper">
+
+        <div id="wheelCircle">
+            Love ❤️
+            Trust 🤝
+            Care 🌹
+            Support 🌟
+            Memories 📸
+            Future 💍
+        </div>
+
+        <button id="spinBtn" class="special-btn">
+            Spin The Wheel ❤️
+        </button>
+
+        <div id="wheelResult"></div>
+
+    </div>
+
+</section>
+
+<!-- Open When Letters -->
+<section id="letters" class="section">
+
+    <h2>📬 Open When Letters</h2>
+
+    <div class="letter-grid">
+
+        <button class="letter-btn" data-letter="Whenever you miss me, remember that my heart is always with you ❤️">📩 Open When You Miss Me</button>
+
+        <button class="letter-btn" data-letter="Whenever you're sad, remember how strong and amazing you are ❤️">📩 Open When You're Sad</button>
+
+        <button class="letter-btn" data-letter="Your happiness is my favorite thing in the world ❤️">📩 Open When You're Happy</button>
+
+        <button class="letter-btn" data-letter="You are capable of achieving every dream you believe in ❤️">📩 Open When You Need Motivation</button>
+
+        <button class="letter-btn" data-letter="Every memory with you is one of my treasures ❤️">📩 Open When You Think Of Us</button>
+
+    </div>
+
+    <div id="letterOutput"></div>
+
+</section>
+
+<!-- Star Map -->
+<section id="starmap" class="section star-section">
+
+    <h2>🌌 Star Map</h2>
+
+    <div class="content-box">
+
+        <p>
+            The universe created countless stars.
+
+            Yet somehow,
+
+            it brought us together.
+
+            ❤️
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Why I Choose You -->
+<section id="choose" class="section">
+
+    <h2>💕 Why I Choose You Every Day</h2>
+
+    <div class="choose-grid">
+
+        <button class="choose-btn" data-text="Because life feels brighter with you.">Reason #1</button>
+
+        <button class="choose-btn" data-text="Because you always stand beside me.">Reason #2</button>
+
+        <button class="choose-btn" data-text="Because your happiness matters to me.">Reason #3</button>
+
+        <button class="choose-btn" data-text="Because you make every memory special.">Reason #4</button>
+
+        <button class="choose-btn" data-text="Because I simply love you.">Reason #5</button>
+
+    </div>
+
+    <div id="chooseOutput"></div>
+
+</section>
+
+<!-- Future Dreams -->
+<section id="dreams" class="section">
+
+    <h2>🌎 Future Dreams Together</h2>
+
+    <div class="dream-grid">
+
+        <div>✈ Travel Together</div>
+        <div>🎂 Celebrate More Birthdays</div>
+        <div>📸 Create More Memories</div>
+        <div>🏡 Build A Beautiful Future</div>
+        <div>❤️ Grow Together</div>
+        <div>💍 Forever</div>
+
+    </div>
+
+</section>
+
+<!-- What I Want -->
+<section id="future" class="section glass">
+
+    <h2>💍 What I Want With You</h2>
+
+    <div class="content-box">
+
+        <p>
+            I don't want perfect days.
+
+            I want real days.
+
+            The happy ones.
+            The difficult ones.
+            The ordinary ones.
+
+            Because every day becomes special
+            when it is spent with you.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Cake -->
+<section id="cake" class="section">
+
+    <h2>🎂 Birthday Cake</h2>
+
+    <div class="cake-box">
+
+        <img id="cakeImage" src="images/cake.png" alt="Birthday Cake">
+
+        <button id="candleBtn" class="special-btn">
+            🕯 Blow The Candles
+        </button>
+
+        <div id="birthdayMessage"></div>
+
+    </div>
+
+</section>
+
+<!-- Letter -->
+<section id="letter" class="section">
+
+    <h2>💌 Letter From My Heart</h2>
+
+    <div class="content-box">
+
+        <p>
+            Dear Charan,
+
+            Thank you for every smile,
+            every conversation,
+            every memory,
+            and every moment.
+
+            You have made my life brighter
+            in ways words cannot fully explain.
+
+            Happy Birthday ❤️
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Birthday Wishes -->
+<section id="birthday" class="section">
+
+    <h2>🎂 Birthday Wishes</h2>
+
+    <div class="content-box">
+
+        <p>
+            May your life be filled with happiness,
+            success, health, peace and countless reasons to smile.
+
+            You deserve all the beautiful things
+            this world has to offer.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Roadmap -->
+<section id="roadmap" class="section">
+
+    <h2>💍 Our Future Together</h2>
+
+    <div class="roadmap">
+
+        <div>❤️ More Memories</div>
+        <div>↓</div>
+        <div>✈ Travel Together</div>
+        <div>↓</div>
+        <div>🎉 Celebrate More Birthdays</div>
+        <div>↓</div>
+        <div>🏡 Beautiful Future</div>
+        <div>↓</div>
+        <div>💍 Forever</div>
+
+    </div>
+
+</section>
+
+<!-- Final Surprise -->
+<section id="surprise" class="final-section">
+
+    <h2>🎁 Final Surprise</h2>
+
+    <button id="finalBtn" class="special-btn">
+        Open Final Surprise ❤️
+    </button>
+
+</section>
+
+<!-- Full Screen Surprise -->
+<div id="finalScreen">
+
+    <div class="final-content">
+
+        <div id="typingMessage"></div>
+
+        <button id="loveBtn" class="love-btn">
+            Click One Last Time ❤️
+        </button>
+
+        <div id="loveExplosion">
+            ❤️ I LOVE YOU ❤️
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        A small surprise from your wife with more love ❤️
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
